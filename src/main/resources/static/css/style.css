@@ -10,6 +10,7 @@
     position: relative;
     margin: 5px;
     display: inline-block;
+    align-self: flex-end; /* Align to the bottom of the flex container's line */
 }
 
 .edit-button {
