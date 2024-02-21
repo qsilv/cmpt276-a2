@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 //import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.ModelAttribute;
 //import org.springframework.web.bind.annotation.PathVariable;
 //import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -103,13 +103,12 @@ public String editStudent(@RequestParam("uid") int uid, Model model) {
     }
 }
 
-// @PostMapping("/student/update")
-// public String updateStudent(@ModelAttribute Student student, RedirectAttributes redirectAttributes) {
-//     // Assuming you have a setter in your Student model for all fields that can be updated
-//     studentRepo.save(student); // Saves the changes to the student
-//     redirectAttributes.addFlashAttribute("message", "Student updated successfully!");
-//     return "redirect:/student/view"; // Redirect back to the student listing page
-// }
+@PostMapping("/student/update")
+public String updateStudent(@ModelAttribute Student student) {
+    // Assuming you have a setter in your Student model for all fields that can be updated
+    studentRepo.save(student); // Saves the changes to the student
+    return "redirect:/student/view"; // Redirect back to the student listing page
+}
 
 
 }

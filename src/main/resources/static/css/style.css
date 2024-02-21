@@ -1,44 +1,48 @@
-header, main, footer {
-    border: 1px solid black;
-}
 
-h1 {
-    border: 3px dotted green;
-    /* margin: 50px; */
-    padding: 20px 30px 40px 50px;
-    width: 50%;
-    position: relative;
-    top: -100px;
-    left:50px;
-}
-
-a {
-    background-color: cyan;
-}
-
-section {
-    padding: 10px;
-    border: 1px dashed red;
-}
-
-.sec1, .sec2 {
-    color: #11FF55;
-    float: left;
-}
 
 #mainpart {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form {
-    clear: left;
+
+
+.student-item {
+    position: relative;
+    margin: 5px;
+    display: inline-block;
 }
 
-table, th, td {
+.edit-button {
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
 }
 
-table {
-    border-collapse: collapse;
+.delete-form {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+.delete-button {
+    width: 1.3em; /* Example size, adjust as needed */
+    height: 1.35em; /* Keeps the button square */
+    padding: 0;
+    font-size: 0.75rem; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Optional, removes the border */
+    background-color: red; /* Example, adjust as needed */
+    color: white; /* For the icon color */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Or space-between */
+    width: 100%; /* Ensure the container spans the full width */
+  }
